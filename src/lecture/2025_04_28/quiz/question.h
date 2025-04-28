@@ -7,11 +7,14 @@ struct Question {
     std::string text;
     std::string answer;
 
-    //Erwartet einen Antwort
+    //Standardkonstruktor
+    Question();
 
-bool check_answer(std::string){
+    //Konstruktor für Fragen mit Antworten.
+    Question(std::string q, std::string a);
 
-}
+    //Erwartet einen Antworttext und liefert true, falls korrekt.
+    bool check_answer(std::string);
 };
 
 #endif
